@@ -11,7 +11,7 @@ MP220 - Browning Citori w/ new sounds for cycle, reload, switch, and fire
 New sounds for picking up all the level 1, 2, or 3 helmets since this changes them to hats.
 
 **HOW TO USE??????? THE COWBOY HATS! THIS IS IMPORTANT!** 
-IT LOOKS LIKE A LOT BUT IT REALLY ISN'T! IF you need help, contact me on discord: nks0875
+IT LOOKS LIKE A LOT BUT IT REALLY ISN'T! IF you need help, contact me on discord: nks0863
 1. Open survev.io
 2. Right click, Hit "Inspect" or Ctrl+I
 3. Once you're in the DevTools area, click "Sources"
