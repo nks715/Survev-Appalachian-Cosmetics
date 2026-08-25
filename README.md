@@ -1,8 +1,12 @@
 **Survev Appalachian Cosmetics has many different user scripts to change your in game sprites to custom ones based on America in the 1950s. Basically, it's a reskinner script for survev.io. NO HACKS INCLUDED, everything is PURELY COSMETICAL**
 Added so far:
+
 Lvl 1 Helmet - White Cowboy Hat
+
 Lvl 2 Helmet - Brown Cowboy Hat
+
 Lvl 3 Helmet - Black Cowboy Hat
+
 Planned:
 Mosin Nagant - Ruger M77 RSI w/ new sounds for cycle, reload, and switch (fire sound will stay same)
 Scout Elite - Henry Long Ranger 223 w/ new sounds for cycle, reload, switch, and fire
