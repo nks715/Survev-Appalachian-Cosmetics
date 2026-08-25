@@ -1,4 +1,4 @@
-<img width="179" height="26" alt="image" src="https://github.com/user-attachments/assets/9f228f8c-944a-4838-85ee-fcdb3c0c7029" />**Survev Appalachian Cosmetics has many different user scripts to change your in game sprites to custom ones based on America in the 1950s. Basically, it's a reskinner script for survev.io. NO HACKS INCLUDED, everything is PURELY COSMETICAL**
+**Survev Appalachian Cosmetics has many different user scripts to change your in game sprites to custom ones based on America in the 1950s. Basically, it's a reskinner script for survev.io. NO HACKS INCLUDED, everything is PURELY COSMETICAL**
 Added so far:
 Lvl 1 Helmet - White Cowboy Hat
 Lvl 2 Helmet - Brown Cowboy Hat
