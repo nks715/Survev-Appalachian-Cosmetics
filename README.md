@@ -49,4 +49,4 @@ then join a game in either solo, duo, or squad (you can create/join team and it 
 16. The canvas disappears after 5 seconds, and you're good to go! All helmets should appear as either White, Brown, or Black cowboy hats!
 
 NEXT TIME:
-1. Once you've completed all the other 16 steps for the hats, then if you close survev.io and come back to it another time, all you need to do is: 
+1. Once you've completed all the other 16 steps for the hats, then if you close survev.io and come back to it another time, all you need to do is: 1. Open survev.io, 2. Open devTools via Inspect, 3. Reload page, 4. close devTools.
