@@ -25,11 +25,14 @@ New sounds for picking up all the level 1, 2, or 3 helmets since this changes th
 IT LOOKS LIKE A LOT BUT IT REALLY ISN'T! IF you need help, contact me on discord: nks0863
 
 FIRST TIME OPERATION:
-1. Go to your Tampermonkey extension, create a new script.<img width="330" height="360" alt="image" src="https://github.com/user-attachments/assets/1508a590-e18d-4216-ae66-965ed0bbd06c" />
+1. Go to your Tampermonkey extension, create a new script. 
+ <img width="330" height="360" alt="image" src="https://github.com/user-attachments/assets/1508a590-e18d-4216-ae66-965ed0bbd06c" />
  Find "atlas-inject.js" in the files on this github page, and copy paste all the code inside that file into that new script that you made on Tampermonkey. Save it and make sure that Tampermonkey is allowed to manipulate other websites (survev.io). If you don't have Tampermonkey, install at https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en&pli=1
 2. Open survev.io
 3. Now, create a new empty folder/directory wherever you'd like on your computer. Name it "survevscripts"
-4. Let's go back to the survev.io tab. In Sources of the devTools, go to "Page" (Exit out of Snippets)
+4. Let's go back to the survev.io tab. Right click and hit inspect. 
+   <img width="1066" height="922" alt="image" src="https://github.com/user-attachments/assets/77581204-3a60-41e3-b4a6-21ae413caaa4" />
+   Find the "Sources" Tab, and inside of that, go to "Page"
 5. Under "survev.io," open the "js" folder. There will be three .js files. We will focus on the two extremely long ones and leave the very short one alone.
 6. Right click one of the long ones. and choose "Override Content." It will ask you to select a folder to save these overrides. For this, choose the folder that we made in step 3 (survevscripts).
 7. Now left click to enter that .js file. Use Ctrl+f to search and type "loadAtlas." You should find a line that says loadAtlas(e) { or something similar. IF YOU DON'T, then go back to "Page" and check in the OTHER long .js file because it could be in either two (these file names change every mode so it's impossible to know which one has it, but one of them always has it for sure).
