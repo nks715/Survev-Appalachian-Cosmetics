@@ -49,262 +49,161 @@ After installing it:
 6.  Save it.
 Make sure Tampermonkey is allowed to run on **survev.io**.
 ------------------------------------------------------------------------
-
 ### 2. Open Survev
-
 Open **survev.io** and keep the tab open.
-
 ------------------------------------------------------------------------
-
 ### 3. Make a folder for the Survev files
-
 Create a new, empty folder **anywhere on your computer**.
-
 Name it:
-
 **`survevscripts`**
-
 Don't put anything inside it yet.
 
 ------------------------------------------------------------------------
-
 ### 4. Open DevTools
-
 Go back to your **survev.io** tab.
-
 Open DevTools:
-
 **Right-click the page → Inspect**
-
 Then click the **Sources** tab.
-
-If you see **Snippets**, don't use it.
-
-Click **Page** instead.
-
+Click **Page** inside the **Sources** tab.
 ------------------------------------------------------------------------
-
 ### 5. Find the Survev JavaScript files
-
 On the left side of DevTools, find:
-
 **`survev.io` → `js`**
-
 You should see **three `.js` files**:
-
 -   one short file
 -   two **very long** files
-
 We only care about the **two long files**.
-
 **Leave the short file alone.**
-
+Left click each file to look inside it in order to see which one is the shortest one, and make sure not to touch it.
 ------------------------------------------------------------------------
-
 ### 6. Turn on Local Overrides
-
 Right-click **one of the two long `.js` files**.
-
 Choose:
-
 **Override Content**
-
-Chrome will ask you to choose a folder.
-
+Chrome will ask you to choose a folder. It will ask this on the TOP of the DevTools. Click "Select Folder."
 Choose:
-
 **`survevscripts`**
-
 If Chrome asks for permission, allow it.
 
 ------------------------------------------------------------------------
-
 ### 7. Find `loadAtlas`
-
 Click the long `.js` file you just enabled.
-
 Press **Ctrl + F** and search for:
-
 **`loadAtlas`**
-
 You should find something similar to:
-
 ``` js
 loadAtlas(e) {
 ```
-
 **Can't find it? No problem.**
-
 Go back to **Page → js** and open the **other long `.js` file**.
-
 Press **Ctrl + F** and search for `loadAtlas` again.
-
 The file names can change, so don't worry if yours looks different.
-
 One of the two long files will have `loadAtlas`.
 
 ------------------------------------------------------------------------
-
 ### 8. Add `imagecreator.js`
-
 Open **`imagecreator.js`** from this repository.
-
 Copy **all of the code** inside it.
-
 Go back to the `.js` file where you found `loadAtlas`.
-
 Inside `loadAtlas`, find these two lines (your variable names may be a
 little different):
-
 ``` js
 let r = ri(this.renderer, this.basePath, t[n]);
 ```
-
 and:
-
 ``` js
 this.atlases[e].spritesheets.push(r)
 ```
-
 Paste the entire contents of **`imagecreator.js`** **between those two
 lines**.
 
 ------------------------------------------------------------------------
-
 ### 9. Save the file
-
 Press **Ctrl + S**.
-
 Look at the file name.
-
 You should see a **purple dot** next to it.
-
 That means the override is active.
 
 ------------------------------------------------------------------------
-
 ### 10. Find the helmet code
-
 Go to the **other long `.js` file**.
-
 Press **Ctrl + F** and search for:
-
 **`helmet01`**
-
 Go to the **FIRST result**.
-
 You should see code defining:
-
 -   `helmet01`
 -   `helmet02`
 -   `helmet03`
 
 ------------------------------------------------------------------------
-
 ### 11. Replace the helmet code
-
 Open **`helmetchanger.js`** from this repository.
-
 Copy all of its code.
-
 In the `.js` file, select the code that defines:
-
 ``` text
 helmet01
 helmet02
 helmet03
 ```
-
-Delete it.
-
+Highlight all of it You will replace that with the new code from here.
 Paste the contents of **`helmetchanger.js`** in its place.
-
-Press **Ctrl + S**.
+Press **Ctrl + S** to save.
 
 ------------------------------------------------------------------------
-
 ### 12. Check that both files are saved
-
 You should now have **two modified `.js` files**.
-
 Make sure:
-
 -   There is **no `*`** next to either file name.
 -   Both files have the **purple override dot**.
-
 If you see a `*`, press **Ctrl + S**.
 
 ------------------------------------------------------------------------
-
 ### 13. Reload Survev
-
 Reload the Survev page:
-
 **Ctrl + R**
-
 Your DevTools overrides should stay saved.
 
 ------------------------------------------------------------------------
-
 ### 14. You might see a blue arrow
-
 Sometimes Chrome pauses the game's code while it is loading.
-
 If you see the popup at the top of the screen, click the **BLUE SIDEWAYS
 ARROW ▶**.
-
 This means **Resume script execution**.
-
 ![Chrome resume script
 popup](https://private-user-images.githubusercontent.com/188116400/640604577-aade7baa-54d1-4aba-b388-a12e08661e79.png)
-
 If you don't see the popup, **don't worry about it**. Just continue.
 
 ------------------------------------------------------------------------
-
 ### 15. Check the Console
-
 Open the **Console** tab in DevTools.
-
 Look for:
-
 ``` text
 [Cowboy Hat] Hat 1 loaded.
 [Cowboy Hat] Hat 2 loaded.
 [Cowboy Hat] Hat 3 loaded.
 ```
-
 If you see all three messages, you're good.
 
 ------------------------------------------------------------------------
-
 ### 16. Join a game
-
 Join a game in:
-
 -   Solo
 -   Duo
 -   Squad
 
 You can also create or join a team.
-
 The cowboy hats should work either way.
 
 ------------------------------------------------------------------------
 
 ### 17. Check the cowboy hat canvas
-
 When you join a game, a large canvas should appear for about **5
 seconds**.
-
 You should see **three cowboy hats** on the right side of the canvas.
-
 If you see all three hats, **the injection worked!** 🤠
-
 The canvas will disappear after about 5 seconds.
 
 ------------------------------------------------------------------------
-
 # 🎉 YOU'RE DONE!
 
 Your helmets should now appear as:
@@ -317,7 +216,7 @@ You don't need to repeat the setup steps every time.
 
 ------------------------------------------------------------------------
 
-# 🔵 USING IT NEXT TIME
+# USING IT NEXT TIME
 
 After completing the setup above **once**, you don't need to do all 17
 setup steps again.
