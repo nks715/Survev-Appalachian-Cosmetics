@@ -75,6 +75,7 @@ On the left side of DevTools, find:
 You should see **three `.js` files**:
 -   one short file
 -   two **very long** files
+
 We only care about the **two long files**.
 **Leave the short file alone.**
 Left click each file to look inside it in order to see which one is the shortest one, and make sure not to touch it.
