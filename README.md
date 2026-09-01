@@ -48,9 +48,11 @@ After installing it:
 5.  Paste the code into your new Tampermonkey script.
 6.  Save it.
 Make sure Tampermonkey is allowed to run on **survev.io**.
+
 ------------------------------------------------------------------------
 ### 2. Open Survev
 Open **survev.io** and keep the tab open.
+
 ------------------------------------------------------------------------
 ### 3. Make a folder for the Survev files
 Create a new, empty folder **anywhere on your computer**.
@@ -65,6 +67,7 @@ Open DevTools:
 **Right-click the page → Inspect**
 Then click the **Sources** tab.
 Click **Page** inside the **Sources** tab.
+
 ------------------------------------------------------------------------
 ### 5. Find the Survev JavaScript files
 On the left side of DevTools, find:
@@ -75,6 +78,7 @@ You should see **three `.js` files**:
 We only care about the **two long files**.
 **Leave the short file alone.**
 Left click each file to look inside it in order to see which one is the shortest one, and make sure not to touch it.
+
 ------------------------------------------------------------------------
 ### 6. Turn on Local Overrides
 Right-click **one of the two long `.js` files**.
