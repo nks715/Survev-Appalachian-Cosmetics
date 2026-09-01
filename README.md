@@ -39,7 +39,7 @@ You need the **Tampermonkey** browser extension.
 If you already have it, skip this step.
 If you don't have it, install it here:
 [Tampermonkey for
-Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffjojejmpbldmpobfkfo?hl=en)
+Chrome]([https://chromewebstore.google.com/detail/tampermonkey/dhdgffjojejmpbldmpobfkfo?hl=en](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en))
 After installing it:
 1.  Click the Tampermonkey icon in your browser.
 2.  Create a **new script**.
