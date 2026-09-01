@@ -36,7 +36,7 @@ You only need to do these steps **once**.
 
 ### 1. Install Tampermonkey
 You need the **Tampermonkey** browser extension.
-If you already have it, skip this step.
+If you already have it, continue with this step.
 If you don't have it, install it here:
 [[Tampermonkey for
 Chrome]([https://chromewebstore.google.com/detail/tampermonkey/dhdgffjojejmpbldmpobfkfo?hl=en](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en))](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
