@@ -209,13 +209,13 @@ If you see all three hats, **the injection worked!** 🤠
 The canvas will disappear after about 5 seconds.
 
 ------------------------------------------------------------------------
-# 🎉 YOU'RE DONE!
+# YOU'RE DONE!
 
 Your helmets should now appear as:
 
--   🤍 **White cowboy hat**
--   🤎 **Brown cowboy hat**
--   🖤 **Black cowboy hat**
+-   **White cowboy hat**
+-   **Brown cowboy hat**
+-   **Black cowboy hat**
 
 You don't need to repeat the setup steps every time.
 
