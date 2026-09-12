@@ -8,11 +8,11 @@ Lvl 2 Helmet - Brown Cowboy Hat
 
 Lvl 3 Helmet - Black Cowboy Hat
 
+Scout Elite - Henry Long Ranger 223 w/ new sounds for cycle, reload, switch, and fire
+
 Planned:
 
 Mosin Nagant - Ruger M77 RSI w/ new sounds for cycle, reload, and switch (fire sound will stay same)
-
-Scout Elite - Henry Long Ranger 223 w/ new sounds for cycle, reload, switch, and fire
 
 Spas-12 - Mossberg 590 w/ new sounds for cycle, reload, switch, and fire
 
