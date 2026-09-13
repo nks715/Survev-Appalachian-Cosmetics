@@ -173,7 +173,7 @@ You can also create or join a team.
 The cowboy hats should work either way.
 
 ------------------------------------------------------------------------
-# YOU'RE DONE!
+# YOU'RE DONE...ALMOST!
 Your helmets should now appear as:
 
 -   **White cowboy hat**
@@ -181,6 +181,16 @@ Your helmets should now appear as:
 -   **Black cowboy hat**
 
 You don't need to repeat the setup steps every time.
+
+Now, you may notice that the new gun images ONLY show up when the loot is on the ground, and not when it's in your inventory. Here's what you need to do to fix this:
+### STEP 1. Search in the JS files for a new function
+1. Search in either long .js file for **`getSvgFromGameType.js`**.
+2. Once you find that function, highlight ALL the code from the start of that line to the last line before the NEXT function. (It should end on a `},`.
+3. Copy paste all the code inside **`gun-swapper-inventory.js`** from THIS repository.
+4. Paste it in place of the code you highlighted on survev.
+5. Save this override, and Reload.
+
+### Now all parts should work!
 
 ------------------------------------------------------------------------
 
@@ -200,16 +210,6 @@ That's it.
 
 Your saved overrides should still be there, so the cowboy hats should
 work automatically. 🤠
-
-Now, you may notice that the new gun images ONLY show up when the loot is on the ground, and not when it's in your inventory. Here's what you need to do to fix this:
-### STEP 1. Search in the JS files for a new function
-1. Search in either long .js file for **`getSvgFromGameType.js`**.
-2. Once you find that function, highlight ALL the code from the start of that line to the last line before the NEXT function. (It should end on a `},`.
-3. Copy paste all the code inside **`gun-swapper-inventory.js`** from THIS repository.
-4. Paste it in place of the code you highlighted on survev.
-5. Save this override, and Reload.
-
-### Now all parts should work!
 
 
 # 🔊 HOW TO INSTALL THE SOUNDS
