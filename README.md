@@ -88,13 +88,21 @@ Inside this loadAtlas file, search for the line:
 
 ------------------------------------------------------------------------
 ### 7. Add `load-atlas.js`
+
 If you'd like only the cowboy hats, open **`load-atlas.js`** from this repository.
+
 If you'd like the gun textures too, open  **`loat-atlas-with-guns.js`** from this repository.
+
 Copy **all of the code** inside it.
+
 Go back to the `.js` file on survev where you found `loadAtlas(e)`.
+
 Look for the code INSIDE the `loadAtlas(e)` function, and search for the lines similar to (they may not be the exact same):
+
 `let r = ii(this.renderer, this.basePath, t[n]);`
+
 `this.atlases[e].spritesheets.push(r)`
+
 Pase the code you copied IN BETWEEN those two lines.
 
 ------------------------------------------------------------------------
