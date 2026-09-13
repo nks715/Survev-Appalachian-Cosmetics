@@ -50,9 +50,9 @@ Click **Page** inside the **Sources** tab.
 ### 4. Find the Survev JavaScript files
 On the left side of DevTools, find:
 **`survev.io` → `js`**
-You should see **three `.js` files**:
--   one short file
--   two **very long** files
+You should see **three `.js` files**. Click inside each file, and you should find:
+-   one of the files is very short
+-   the other two **very long** files are thousands of lines long.
 
 We only care about the **two long files**.
 **Leave the short file alone.**
