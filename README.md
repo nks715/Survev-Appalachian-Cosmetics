@@ -63,9 +63,11 @@ Left click each file to look inside it in order to see which one is the shortest
 Right-click **one of the two long `.js` files**.
 Choose:
 **Override Content**
+
 Chrome will ask you to choose a folder. It will ask this on the TOP of the DevTools. Click "Select Folder."
 Choose:
 **`survevscripts`**
+
 If Chrome asks for permission, allow it.
 
 ------------------------------------------------------------------------
