@@ -20,7 +20,7 @@ MP220 - Browning Citori w/ new sounds for cycle, reload, switch, and fire
 
 New sounds for picking up all the level 1, 2, or 3 helmets since this changes them to hats.
 
-# 🤠 HOW TO USE THE COWBOY HATS
+# 🤠 HOW TO USE THE COWBOY HATS AND/OR NEW GUN IMAGES
 
 **IMPORTANT: READ ALL OF THIS BEFORE STARTING!**
 
