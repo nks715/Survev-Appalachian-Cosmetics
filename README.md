@@ -20,7 +20,6 @@ MP220 - Browning Citori w/ new sounds for cycle, reload, switch, and fire
 
 New sounds for picking up all the level 1, 2, or 3 helmets since this changes them to hats.
 
-
 # 🤠 HOW TO USE THE COWBOY HATS
 
 **IMPORTANT: READ ALL OF THIS BEFORE STARTING!**
@@ -29,39 +28,18 @@ It looks like a lot of steps, but once you do it the first time, it's pretty eas
 If you get stuck, contact me on Discord: **nks0863**
 
 ------------------------------------------------------------------------
-
-# FIRST TIME SETUP
-
-You only need to do these steps **once**.
-
-### 1. Install Tampermonkey
-You need the **Tampermonkey** browser extension.
-If you already have it, continue with this step.
-If you don't have it, install it here:
-[[Tampermonkey for
-Chrome]([https://chromewebstore.google.com/detail/tampermonkey/dhdgffjojejmpbldmpobfkfo?hl=en](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en))](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
-After installing it:
-1.  Click the Tampermonkey icon in your browser.
-2.  Create a **new script**.
-3.  Open **`atlas-inject.js`** from this repository.
-4.  Copy **all of the code** inside it.
-5.  Paste the code into your new Tampermonkey script.
-6.  Save it.
-Make sure Tampermonkey is allowed to run on **survev.io**.
-
-------------------------------------------------------------------------
-### 2. Open Survev
+### 1. Open Survev
 Open **survev.io** and keep the tab open.
 
 ------------------------------------------------------------------------
-### 3. Make a folder for the Survev files
+### 2. Make a folder for the Survev files
 Create a new, empty folder **anywhere on your computer**.
 Name it:
 **`survevscripts`**
 Don't put anything inside it yet.
 
 ------------------------------------------------------------------------
-### 4. Open DevTools
+### 3. Open DevTools
 Go back to your **survev.io** tab.
 Open DevTools:
 **Right-click the page → Inspect**
@@ -69,7 +47,7 @@ Then click the **Sources** tab.
 Click **Page** inside the **Sources** tab.
 
 ------------------------------------------------------------------------
-### 5. Find the Survev JavaScript files
+### 4. Find the Survev JavaScript files
 On the left side of DevTools, find:
 **`survev.io` → `js`**
 You should see **three `.js` files**:
@@ -81,7 +59,7 @@ We only care about the **two long files**.
 Left click each file to look inside it in order to see which one is the shortest one, and make sure not to touch it.
 
 ------------------------------------------------------------------------
-### 6. Turn on Local Overrides
+### 5. Turn on Local Overrides
 Right-click **one of the two long `.js` files**.
 Choose:
 **Override Content**
@@ -91,7 +69,7 @@ Choose:
 If Chrome asks for permission, allow it.
 
 ------------------------------------------------------------------------
-### 7. Find `loadAtlas`
+### 6. Find `loadAtlas`
 Click the long `.js` file you just enabled.
 Press **Ctrl + F** and search for:
 **`loadAtlas`**
@@ -104,33 +82,28 @@ Go back to **Page → js** and open the **other long `.js` file**.
 Press **Ctrl + F** and search for `loadAtlas` again.
 The file names can change, so don't worry if yours looks different.
 One of the two long files will have `loadAtlas`.
+Inside this loadAtlas file, search for the line: 
 
 ------------------------------------------------------------------------
-### 8. Add `imagecreator.js`
-Open **`imagecreator.js`** from this repository.
+### 7. Add `load-atlas.js`
+If you'd like only the cowboy hats, open **`load-atlas.js`** from this repository.
+If you'd like the gun textures too, open  **`loat-atlas-with-guns.js`** from this repository.
 Copy **all of the code** inside it.
-Go back to the `.js` file where you found `loadAtlas`.
-Inside `loadAtlas`, find these two lines (your variable names may be a
-little different):
-``` js
-let r = ri(this.renderer, this.basePath, t[n]);
-```
-and:
-``` js
-this.atlases[e].spritesheets.push(r)
-```
-Paste the entire contents of **`imagecreator.js`** **between those two
-lines**.
+Go back to the `.js` file on survev where you found `loadAtlas(e)`.
+Look for the code INSIDE the `loadAtlas(e)` function, and search for the lines similar to (they may not be the exact same):
+`let r = ii(this.renderer, this.basePath, t[n]);`
+`this.atlases[e].spritesheets.push(r)`
+Pase the code you copied IN BETWEEN those two lines.
 
 ------------------------------------------------------------------------
-### 9. Save the file
+### 8. Save the file
 Press **Ctrl + S**.
 Look at the file name.
 You should see a **purple dot** next to it.
 That means the override is active.
 
 ------------------------------------------------------------------------
-### 10. Find the helmet code
+### 9. Find the helmet code
 Go to the **other long `.js` file**.
 Press **Ctrl + F** and search for:
 **`helmet01`**
@@ -141,8 +114,9 @@ You should see code defining:
 -   `helmet03`
 
 ------------------------------------------------------------------------
-### 11. Replace the helmet code
-Open **`helmetchanger.js`** from this repository.
+### 10. Replace the helmet code
+Open **`helmet-changer.js`** from this repository if the current mode is NOT 50v50 or Potato vs. Tomato.
+Open **`helmet-changer-factions.js`** from this repository if the current mode IS 50v50 or Potato vs. Tomato.
 Copy all of its code.
 In the `.js` file, select the code that defines:
 ``` text
@@ -151,11 +125,11 @@ helmet02
 helmet03
 ```
 Highlight all of it You will replace that with the new code from here.
-Paste the contents of **`helmetchanger.js`** in its place.
+Paste the contents of **`helmetchanger.js`** or **`helmetchangerfifty.js`** in its place.
 Press **Ctrl + S** to save.
 
 ------------------------------------------------------------------------
-### 12. Check that both files are saved
+### 11. Check that both files are saved
 You should now have **two modified `.js` files**.
 Make sure:
 -   There is **no `*`** next to either file name.
@@ -163,7 +137,7 @@ Make sure:
 If you see a `*`, press **Ctrl + S**.
 
 ------------------------------------------------------------------------
-### 13. Reload Survev
+### 12. Reload Survev
 Reload the Survev page:
 **Ctrl + R**
 Your DevTools overrides should stay saved.
@@ -179,17 +153,6 @@ popup](https://private-user-images.githubusercontent.com/188116400/640604577-aad
 If you don't see the popup, **don't worry about it**. Just continue.
 
 ------------------------------------------------------------------------
-### 15. Check the Console
-Open the **Console** tab in DevTools.
-Look for:
-``` text
-[Cowboy Hat] Hat 1 loaded.
-[Cowboy Hat] Hat 2 loaded.
-[Cowboy Hat] Hat 3 loaded.
-```
-If you see all three messages, you're good.
-
-------------------------------------------------------------------------
 ### 16. Join a game
 Join a game in:
 -   Solo
@@ -200,17 +163,7 @@ You can also create or join a team.
 The cowboy hats should work either way.
 
 ------------------------------------------------------------------------
-
-### 17. Check the cowboy hat canvas
-When you join a game, a large canvas should appear for about **5
-seconds**.
-You should see **three cowboy hats** on the right side of the canvas.
-If you see all three hats, **the injection worked!** 🤠
-The canvas will disappear after about 5 seconds.
-
-------------------------------------------------------------------------
 # YOU'RE DONE!
-
 Your helmets should now appear as:
 
 -   **White cowboy hat**
@@ -237,3 +190,26 @@ That's it.
 
 Your saved overrides should still be there, so the cowboy hats should
 work automatically. 🤠
+
+# 🔊 HOW TO INSTALL THE SOUNDS
+-----------------------------------------------------------------------
+# FIRST TIME SETUP
+
+You only need to do these steps **once**.
+
+### 1. Install Tampermonkey
+You need the **Tampermonkey** browser extension.
+If you already have it, continue with this step.
+If you don't have it, install it here:
+[[Tampermonkey for
+Chrome]([https://chromewebstore.google.com/detail/tampermonkey/dhdgffjojejmpbldmpobfkfo?hl=en](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en))](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
+After installing it:
+1.  Click the Tampermonkey icon in your browser.
+2.  Create a **new script**.
+3.  Open **`sound-swapper.js`** from this repository.
+4.  Copy **all of the code** inside it.
+5.  Paste the code into your new Tampermonkey script.
+6.  Save it.
+Make sure Tampermonkey is allowed to run on **survev.io**.
+
+From here on, every time you open survev.io, the new sounds will always load automatically!
